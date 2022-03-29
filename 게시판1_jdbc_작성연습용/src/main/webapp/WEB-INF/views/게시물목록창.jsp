@@ -3,6 +3,8 @@
 <%@ page import="com.stone.springmvc.board.common.Board" %>
 <% ArrayList<Board> boards= (ArrayList<Board>) request.getAttribute("boards"); %>
 <!-- 컨트롤러에서 Mapping한 listboard를 board로 저장 -->
+<% int count = (int) request.getAttribute("countboard"); %>
+// count를 받기 위해서 count 지정 
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +23,9 @@
         <!-- ex) /viewboard?no=1 -->
     </li>
 <%} %>
+
+<li><%= "전체 게시물개수는" +  count + "개 입니다."%>
+
 </ul>
 <br><button onclick="location.href='/main'">메인</button>
 </body>

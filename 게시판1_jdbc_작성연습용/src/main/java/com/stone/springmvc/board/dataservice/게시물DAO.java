@@ -27,4 +27,5 @@ public class 게시물DAO {
 	public void 변경하다(Board 수정할게시물) {
 		한게시물Mapper.변경하다(수정할게시물);	
 	}	
+	
 }
