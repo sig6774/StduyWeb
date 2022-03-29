@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>메인 페이지이면서 이것이 뷰다.</h1>
+
+<a herf="test1">요청만</a> <br>
+<!-- // 요청만을 누르면 홈페이지에서 test1을 실행-->
+<a herf="test2?no=1">test요청과 no이름으로 값1을 보냄</a>
+<!--// test요청과 no이름으로 값1을 보냄 -->
+
+</body>
+</html>

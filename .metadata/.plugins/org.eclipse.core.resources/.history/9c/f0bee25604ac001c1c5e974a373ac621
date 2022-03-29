@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import="공통.Board"%>
+<!-- import 하는법  -->
+    <%
+
+    	Board 새게시물 = (Board) request.getAttribute("v1");
+    
+    
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

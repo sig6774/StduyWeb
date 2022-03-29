@@ -1,0 +1,33 @@
+package com.stone.springmvc.board.presentation;
+
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.stone.springmvc.board.common.Board;
+import com.stone.springmvc.board.service.게시물업무자;
+
+
+@Controller
+public class Board컨트롤러 {
+		게시물업무자 한게시물업무자=new 게시물업무자();
+		
+		@GetMapping("prepareboard")
+		public ModelAndView 게시물입력을준비하다() {
+			
+			ModelAndView mv = new ModelAndView();
+			mv.setViewName("게시물등록창");
+			// 뷰 이름 등록
+			// mv.addObject(attributeValue) // 보내는 데이터가 있으면 사용 
+			return  mv
+			
+		}
+}
+
+
+

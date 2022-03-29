@@ -1,0 +1,12 @@
+package Lotto;
+
+import java.util.ArrayList;
+
+public class PR_LOTTO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> lotto = new ArrayList<Integer>();
+	}
+
+}

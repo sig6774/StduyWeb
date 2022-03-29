@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%
+		int v1 = (int) request.getAttribute("v1");
+		String v2 = (String) request.getAttribute("v2");
+
+%>
+<!-- <% %> : 자바코드라는 뜻 -->
+<!-- request.getAttribute("v1") : v1이라는 값을 뷰에 보낸다는 뜻  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

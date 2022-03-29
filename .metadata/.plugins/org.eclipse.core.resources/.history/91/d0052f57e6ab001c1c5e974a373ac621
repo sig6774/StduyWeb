@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>메인 페이지이면서 이것이 뷰다.</h1>
+
+<a href="test1">요청만</a> <br>
+<!-- // 요청만을 누르면 홈페이지에서 test1을 실행-->
+<a href="test2?no=1&name=sun">test요청과 no이름으로 값1을 보냄</a>
+<!--// test요청과 no이름으로 값1을 보냄을 누르면 값 1을 보냄 -->
+
+<!--  post 방식 전송은 form을 이용한다. -->
+<!-- form을 통해서 블럭을 생성 -->
+<!-- 더 알고 싶으면 w3form을 통해서 확인가능  -->
+<form action = "/test3" method = "post">
+	제목<input type="text"/><br>
+	내용<textarea cols="20" rows="5"></textarea>
+<!-- cols :  -->
+	<input type="submit" value="보내기" />
+
+
+
+</form>
+</body>
+</html>

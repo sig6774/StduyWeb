@@ -1,0 +1,32 @@
+package Day6;
+/*
+주문프로그램 작성해보기 
+- 주문 (주문번호, 주문내역, 가격)
+- 요리 
+- 배송
+
+사칙연산 수행하는 프로그램
+- 수 받아오기 
+- 받은 수를 바탕으로 여러 사칙연산 수행   
+ */
+
+class 수{
+	int 수1, 수2;
+	int[] 수를입력해주세요(int 수1, int 수2) {
+		int[] 수들 = new int[2];
+		수들[0] = 수1;
+		수들[1] = 수2;
+		return 수들;
+	}
+}
+public class 내가생각하는거구현 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		수 수입력 = new 수();
+		int[] 수틀 = 수입력.수를입력해주세요(20,30);
+		System.out.println(수틀[0]);
+		System.out.println(수틀[1]);
+	}
+
+}

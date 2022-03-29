@@ -1,0 +1,15 @@
+package Day7;
+class 게시물{
+	int 번호;
+	String 제목;
+	String 내용;
+	String 작성일;
+}
+public class 게시물연습 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

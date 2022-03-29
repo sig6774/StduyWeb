@@ -1,0 +1,48 @@
+package Day6;
+
+class 게시물{
+	int 번호;
+	String 제목;
+	String 내용;
+	String 작성일;
+}
+
+class 게시물저장소{
+	게시물[] 게시물집합;
+	게시물저장소(){
+		게시물집합 = new 게시물[2];
+		
+		게시물집합[0] = new 게시물();
+		게시물집합[0].번호 = 2;
+		게시물집합[0].제목 = "점심메뉴";
+		게시물집합[0].내용 = "중식";
+		
+		게시물집합[1].번호 = 3;
+		게시물집합[1].제목 = "저녁메뉴";
+		게시물집합[1].내용 = "한식";
+	}
+	
+	int 게시물개수() {
+		return 게시물집합.length;
+	}
+	
+	게시물 특정게시물조회(int 게시물번호) {
+		return 게시물집합[게시물번호-1];
+	}
+	
+	게시물[] 전체게시물() {
+		return 게시물집합;
+	}
+}
+
+class 게시물관리자{
+	
+}
+public class 게시물1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

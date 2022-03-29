@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>메인 페이지이면서 이것이 뷰다.</h1>
+
+<a href="test1">요청만</a> <br>
+<!-- // 요청만을 누르면 홈페이지에서 test1을 실행-->
+<a href="test2?no=1&name=sun">test요청과 no이름으로 값1을 보냄</a>
+<!--// test요청과 no이름으로 값1을 보냄을 누르면 값 1을 보냄 -->
+
+<!--  post 방식 전송은 form을 이용한다. -->
+<!-- form을 통해서 블럭을 생성 -->
+<!-- 더 알고 싶으면 w3form을 통해서 확인가능  -->
+<p> post 방식 전송은 form을 이용한다. <br>
+마치 입력된 제목과 내용까지 게시물을 보내는 느낌
+
+<h1>게시물등록</h1>
+<form action = "/test3" method = "post">
+	title<input type="text" name="title"/><br>
+contents<textarea cols="20" rows="5" name="contents"></textarea>
+<!-- 20개의 글자와 5줄을 입력할 수 있는 공간 만들기 -->
+<!-- 만든 공간에 제목과 내용을 입력하면 그것을 AnyController에 값을 받아올 수 있음  -->
+	<input type="submit" value="보내기" /><br>
+
+
+
+</form>
+</body>
+</html>

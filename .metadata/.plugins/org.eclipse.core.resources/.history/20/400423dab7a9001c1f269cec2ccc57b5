@@ -1,0 +1,23 @@
+package Day6;
+/*
+주문프로그램 작성해보기 
+- 주문 (주문번호, 주문내역, 가격)
+- 요리 
+- 배송
+- 프로세스 : 주문을 받아서 요리를 시작 요리 결과를 배송으로 전달 
+ */
+
+class 주문1{
+	int 주문번호;
+	String 주문내역;
+	int 가격;
+}
+
+public class 주문테스트 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
