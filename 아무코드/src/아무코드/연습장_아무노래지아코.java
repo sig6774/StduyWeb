@@ -22,7 +22,7 @@ class 계산기{
 	}
 }
 
-public class 아무노래지아코 {
+public class 연습장_아무노래지아코 {
 	
 	static void 줄넘기뛰기(int 횟수) {
 		// 입력으로 받은 숫자만큼 프린트하기
@@ -101,7 +101,6 @@ static int max(ArrayList<Integer> 임의의정수들) {
 		}
 }
 	return 최대값;}
-
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
