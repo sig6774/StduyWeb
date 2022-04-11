@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+    <style>
+        body p {
+            font-size: 40px;
+            color: blueviolet;
+        }
+        body p1 {
+            font-size: 30px;
+            color: green;
+        }
+        body p1 span{
+            font-size : 35px;
+            font-weight: bold;
+            background: firebrick;
+            font-family: cursive;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>
+        <abbr title="Hyper Text Markup Language">HTML</abbr>은 웹 페이지의 구조를 만드는 언어입니다.
+        <!-- 특정영역 래핑 : 래핑하고 싶은 영역을 드래그한 후 F1을 통해서 Emmet을 클릭하여 원하는 태그 부착 -->
+        <!-- abbr은 강조하고 싶은 내용에 태깅 
+             title에는 강조에 대한 설명을 작성하면 됨 -->
+    </p>
+
+    <p1>
+        <ol type="A">
+            <li><mark>1절 </mark>동해물과 백두산이 마르고 닳도록
+                하느님이 보우하사 우리나라 만세.</li>
+                <br>
+            <li>
+                2절 남산 위에 저 소나무, 철갑을 두른 듯 
+                <em>바람 서리 <em>불변함</em>은 우리 기상일세.</em>
+            </li>
+            
+            <br>
+
+            <li>
+                3절 가을 하늘 <strong>공활한테</strong> 높고 구름 없이 
+                <span>밝은 달</span>은 우리 가슴 <b>일편단심일세.</b>
+            </li>
+            <!-- span은 아무 의미가 없지만 style을 통해서 글씨크기 및 색상 등의 강조를 표현할 수 있음  -->
+        </ol>
+        <!-- <mark>는 강조하고 싶은 내용을 형광펜으로 칠해주는 것과 같이 해줌  
+             <em> 조금 더 강조하고 싶을때 사용하는 것 조금 기울어진 글씨로 바뀜 중첩 가능 
+             <strong> 특정 텍스트를 굵은 글씨체로 강조해주며 엄청 중요한 내용을 담고 있다는 의미   
+             <b> 특정 텍스트를 굵은 글씨체로 강조해주지만 특정 의미가 없음 -->
+    </p1>
+    
+    
+</body>
+</html>
