@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectOption</title>
+    <style>
+        form select{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <select name="Drink">
+            <optgroup label = "Coffee">
+                <option value="am">Americano</option>
+                <option value="es">Espresso</option>
+                <option value="cl">Caffe Latte</option>
+                <option value="cc">Cappuccino</option>
+                <option value="vl">Vanila Latte</option>
+                <!-- value를 적지 않으면 적은 내용이 그대로 전송됨
+                     하지만 서버로 보낼 값을 다르게 하고 싶으면 value에 따로 적어줌 -->
+            </optgroup>
+
+            <optgroup label = "Juice">
+                <option >Orange juice</option>
+                <option >Grape juice</option>
+            </optgroup>
+            <!-- f1을 통해서 그룹을 지정하여 하나의 select에서 옵션을 그룹화하여 진행할 수 있음  -->
+
+        </select><br>
+
+        <select name="Car" id="">
+            <option value="">Car1</option>
+            <option value="">Car2</option>
+            <option value="">Car3</option>
+
+        </select><br>
+
+        <br><br><br>
+
+
+        <input type="text" list="fruits">
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Orange</option>
+            <option>Mango</option>
+            <option>Pineapple</option>
+            <option>Grape</option>
+        </datalist>
+        <!-- input의 list를 통해서 datalist와 연동을 진행 
+             datalist는 바에 직접 입력을 하여 자동완성도 가능 -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class_id</title>
+    <style>
+        .btn {
+            height: 50px;
+            background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+            border: 2px solid #d5d5d5;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: relative;
+            color: #333;
+        }
+
+        .btn-primary {
+            border: 1px solid #65b836;
+            color: #fff;
+            background: #55a532 linear-gradient(#91dd70, #55ae2e);
+        }
+
+        .btn:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.07);
+        }
+
+        .btn-pink {
+            border: 1px solid #f060d1;
+
+            color: #fff;
+            background: #f060d1 linear-gradient(#f3baf0, #de56f0);
+        }
+    </style>
+</head>
+<body>
+    <button id="join-btn" class="btn">Join</button>
+    <!-- 클래스에 btn을 넣으면 style에서 지정한 btn과 같은 디자인 
+         여러개의 버튼을 만들어도 btn과 같은 디자인으로 만들어짐 -->
+    <!-- id 이름을 준 순간 다른 곳에서는 동일한 id이름을 줄 수 없음 -->
+
+    <button class="btn btn-primary">Login</button>
+    <!-- 디자인을 두개 적용할 수 있음  -->
+
+    <button class="btn btn-pink">바튼</button>
+
+    <script>
+        document.getElementById("join-btn").onclick = function(){
+            alert("회원 가입 버튼이 클릭.")
+        }
+    </script>
+    <!-- JS를 이용하여 특정 버튼을 클릭하게 되면 이벤트를 발생시키는 것 
+         id가 동일해야함 -->
+</body>
+</html>

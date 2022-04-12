@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스페샬심볼은 특수기호</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hello                                                 World!<br>
+    </p>
+    <!-- 아무리 가로 공백을 줘도 표시되지 않음  -->
+    
+    <p>
+        Hello &nbsp;&nbsp;&nbsp; World! <br>
+    </p>
+    <!-- &nbsp : 가로 공백 한칸을 해주는 명령어 -->
+    <p>
+        Hello &nbsp;&ensp;&emsp;&emsp; World! <br>
+        &quot;&lt;div&gt;&quot; 태그는 아무 의미가 없는 블록 영역을 구성
+    </p>
+    <!-- &ensp : 가로 공백 두 칸을 해주는 명령어 
+         &emsp : 가로 공백 3칸을 해주는 명령어 
+         &quot : "를 표현하는 명령어  
+         &lt : <을 표현하는 명령어 
+         &gt : >을 표현하는 명령어
+        "<div>"를  표한하기 위해 &quot;&lt;div&gt;&quot; 사용-->
+</body>
+</html>

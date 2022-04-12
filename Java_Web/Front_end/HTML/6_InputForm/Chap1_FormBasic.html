@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            font-size: 30px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 폼이라는 태그를 사용하면 다른 곳으로 정보를 전송할 수 있음 
+         서버에 보내기 위해 사용하는 것이라고 생각 -->
+    <form action="#" method="post" autocomplete="off">
+        <!-- action : 전송할 정보를 처리할 페이지의 url 입력 
+             method : get이 default이고 post는 주소에 묻어서 정보를 전송하지 않음 
+             autocomplete : 자동완성기능을 키거나 끄는 것-->
+        아이디 : <input type="text" name="id" value="해위~"><br>
+        <!-- input 타입은 text이다. 라는 뜻 -->
+        <!-- value는 사용자가 입력 전 기본값을 지정해주는 것이며 아이디 기억하기에 사용할 수 있음 -->
+
+        비밀번호 : <input type="password" name="pw" required><br>
+        <!-- 비밀번호는 노출되면 안되는 정보이므로 type을 password로 지정  
+             required : 사용자가 비밀번호를 입력하지 않으면 전송이 안되도록 설정하는 것 -->
+
+        성별 <br>
+        <input type="radio" name="gender" value="male"> 남 
+        <input type="radio" name="gender" value="female"> 여 <br>
+        <!-- 둘 중 하나를 선택할 수 있는 라디오 버튼을 생성 
+             라디오 버튼을 생성하기 위해서는 name을 똑같이 생성해야함  
+             버튼을 눌렀을때 보내야할 value를 지정해야함 -->
+
+        취미 <br>
+        <input type="checkbox" name = "hobby" value="독서"> 독서
+        <input type="checkbox" name = "hobby" value="영화"> 영화
+        <input type="checkbox" name = "hobby" value="운동"> 운동
+        <input type="checkbox" name = "hobby" value="수면"> 수면 
+        <input type="checkbox" name = "hobby" value="게임"> 게임<br>
+        <!-- 여러개를 동시에 선택할 수 있는 체크박스 생성  -->
+             
+        <!-- 당연히 체크박스도 name을 똑같이 생성할 수 있음 
+             버튼을 눌렀을때 어디에 값을 보내야하므로 value를 지정 -->
+
+        자기소개 <br>
+        <textarea name="introduce" cols="30" rows="10">작성해주세요.</textarea><br>
+        
+        <input type="emaul" name="mail" placeholder="이메일을 입력하세요."><br>
+        <!-- placeholder를 넣으면 사용자가 선택하기 전 텍스트가 표시됨 (가이드 라인)-->
+
+        <input type="file" name="upload"><br>
+        <!-- type을 file로 지정하면 페이지에 파일을 업로드할 수 있는 기능  -->
+
+        <input type="number" name="age" min="1" max="150" placeholder="나이를 입력하세요."><br>
+        <!-- 숫자만 입력하고 조건을 걸어줄 수 있는 기능  -->
+
+        <input type="range" min="0" max="10" step="1" value="3"><br>
+        <!-- 범위를 지정하여 그래프를 조정할 수 있는 range바를 만들어주며 value는 초기값이 무엇인지 알려주는 것  -->
+
+        <input type="submit" value="전송">
+        <!-- 전송 버튼을 생성할 수 있음 -->
+
+        <!-- http://127.0.0.1:5500/Java_Web/Front_end/HTML/6_InputForm/Chap1_FormBasic.html?id=%ED%95%B4%EC%9C%84%7E&pw=werwer&gender=male&hobby=%EC%98%81%ED%99%94&hobby=%EC%9A%B4%EB%8F%99&hobby=%EC%88%98%EB%A9%B4&introduce=%EC%9E%91%EC%84%B1%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.&mail=werwre%40werwer.cpone&upload=&age=# 
+             이렇게 값이 저장되어서 보내짐
+             form에서 method를 get으로 하면 주소에 정보가 저장되어 보내짐
+             form에서 method를 post로 하면 주소에 정보가 저장되지 않고 숨겨져서 보내짐-->
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid blue;
+            padding : 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <!-- border의 숫자의 크기가 커질수록 선이 굵어짐 -->
+        <!-- tr*7>td*3 7행 3열을 빠르게 적을 수 있는 것-->
+        <!-- tr이 행이고 td가 열이며 colspan은 열을 병합(가로병합)을 뜻하네 
+             행을 기준으로 안에 열의 값을 넣어주는 것으로 진행하네-->
+        <caption>공연 시간과 요금 정보</caption> 
+        <!-- caption은 table 태그 안에서 사용할 수 있는 태그이며 제목느낌  -->
+        <tr>
+            <td colspan="3">공연요금</td>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>S석</td>
+            <td>VIP</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>50,000</td>
+            <td>70,000</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>40,000</td>
+            <td>60,000</td>
+            
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 50%</td>
+            <!-- 소인은 2개의 열이 병합되어 있으므로 하나의 td를 지우고 병합  -->
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td>13:00 - 15:00</td>
+        </tr>
+        <tr>
+            <td>2회</td>
+            <td>17:00 - 19:00</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
