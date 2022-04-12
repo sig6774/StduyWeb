@@ -1,0 +1,9 @@
+@import "side.css";
+/* 2개 이상의 css소스를 가져와서 사용하고 싶을때 @import 사용하여 가져올 수 있음  */
+/* index.html에서 main을 불러왔고 main에서는 side를 @import를 통해서 불러옴 */
+h1, p{
+    color: red;
+    background : orange;
+}
+/* h1과 p에 대해서 스타일을 지정해줌 */
+/* 링크를 지정해야 연결이 됨 */

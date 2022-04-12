@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+
+    <style>
+        .red-color{
+            font-size: 30px;
+            color : red;
+        }
+        .blue-color{
+            color : blue;
+        }
+        .green-color{
+            color:green;
+            font-size : 25px
+        }
+
+    </style>
+    <!-- 클래스를 지목하는 기호는 "." 으로 작성 -->
+</head>
+<body>
+    <h1 class="blue-color">졸리다 졸려~</h1>
+    <!-- div>ul>li*3 -->
+    <div class="green-color">
+        <ul>
+            <li>사과</li>
+            <li>오렌지</li>
+            <li class="red-color">딸기</li>
+        </ul>
+    </div>
+    
+    <div>당근</div>
+    <p class="red-color">토마토</p>
+    <span>오렌지</span>
+    <!-- class는 어떤 태그에 들어가도 상관없고 여러개 사용해도 괜찮음 
+         즉 특정 태그에 동일한 스타일을 지정하기 위해 사용 -->
+    
+</body>
+</html>

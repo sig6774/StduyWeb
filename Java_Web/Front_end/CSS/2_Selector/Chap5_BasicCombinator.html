@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일치선택자</title>
+    <style>
+        span.orange{
+            font-size: 1.2em;
+            color : orange;
+        }
+    </style>
+    <!-- span과 orange 두개의 선택자가 있고 span.orange는 span의 class가 orange인 것에 대해서만 스타일 적용 -->
+</head>
+<body>
+    <h1>졸리다 졸려~</h1>
+    <!-- div>ul>li*3 -->
+    <div>
+        <ul>
+            <li>사과</li>
+            <li class="orange">오렌지</li>
+            <li>딸기</li>
+        </ul>
+    </div>
+    
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+</body>
+</html>

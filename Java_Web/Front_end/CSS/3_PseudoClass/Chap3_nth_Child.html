@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .fruits >li:nth-child(4){
+            color : orange;
+            /* fruit 클래스 안에 자식 태그인 li의 4번째의 디자인을 바꿔라 */
+        }
+
+        .fruits >li:nth-child(even){
+            color : blue;
+            /* fruit 클래스 안에 자식 태그인 li의 짝수번째의 디자인들을 바꿔라 */
+        }
+        /* 디자인은 마지막으로 지정된 것을 기준으로 바뀜 그러므로 4번째는 오렌지색이였다가 파란색으로 변경 */
+
+        .fruits >li:nth-child(odd){
+            color : red;
+            /* fruit 클래스 안에 자식 태그인 li의 홀수번째의 디자인들을 바꿔라 */
+        }
+
+        .fruits >li:nth-child(3n+1){
+            font-size: 50px;
+            font-style: italic;
+            /* css는 n키워드 사용 시 0부터 들어감 */
+        }
+        /* 태그가 같아야 nth-child(순서) 적용가능  */
+
+        .food  p:nth-child(1){
+            color:blue;
+        }
+        /* food 클래스의 첫번째 자식이 p인지 아닌지 찾기 때문에 p는 첫번째 자식이 아니기 때문에 바뀌지 않음  */
+        /* food의 첫번째 자식이 p가 아니기 때문에 지목해서 스타일을 매길 수 없음 */
+
+        .food p:nth-of-type(1){
+            color : blue;
+        }
+        /* food 클래스의 첫번째 p의 스타일을 바꾸기 위해서는 nth-of-type(순서)을 사용 */
+        /* 같은 종류의 요소 중 n번째 요소의 스타일을 바꾸고 싶을때 사용 */
+
+        /* 문제 : 3-1에 빨간색을 칠하라 */
+        
+        .box-group div:nth-of-type(3) :nth-of-type(1){
+            color : red;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>수박</li>
+        <li>포도</li>
+        <li>참외</li>
+        <li>배</li>
+    </ul>
+
+    
+    <hr> 
+    <!-- 구분선 작성 -->
+
+    <div class="food">
+        <div>짜장면</div>
+        <p>볶음밥</p>
+        <p>탕수육</p>
+        <span>짬뽕</span>
+    </div>
+
+    <hr>
+
+    <!-- 문제 -->
+    <div class="box-group">
+        <div>1</div>
+        <div>2</div>
+        <div>3
+            <div>3-1</div>
+            <div>3-2</div>
+            <div>3-3</div>
+        </div>
+    </div>
+
+</body>
+</html>

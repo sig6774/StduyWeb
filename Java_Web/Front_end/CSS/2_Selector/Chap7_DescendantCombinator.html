@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후손선택자</title>
+
+    <style>
+        div .red-color{
+            color : red;
+            font-size: 30px;
+        }
+        /* div 안에 있는 모든 자손 중 클래스 이름이 red-color인 값만 스타일을 바꿔라 */
+        /* 클래스 이름이 같은것 중 특정 값만 딸기만 색이 바뀌는 것을 확인 */
+
+        p.red-color{
+            color : fuchsia;
+            font-size : 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="blue-color">졸리다 졸려~</h1>
+    <!-- div>ul>li*3 -->
+    <div class="green-color">
+        <ul>
+            <li>사과</li>
+            <li>오렌지</li>
+            <li class="red-color">딸기</li>
+        </ul>
+    </div>
+    
+    <div>당근</div>
+    <p class="red-color">토마토</p>
+    <span>오렌지</span>
+</body>
+</html>

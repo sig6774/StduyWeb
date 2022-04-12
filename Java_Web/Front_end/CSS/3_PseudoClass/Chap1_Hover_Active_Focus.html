@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:hover{
+            /* hover : 가상의 요소, 아직은 일어나지 않았지만 사용자에 의해서 일어남 */
+            font-weight: bold;
+            font-size: 30px;
+        }
+        /* 사용자의 마우스가 a태그인 이동에 갖다대면 a:hover에서 지정한 것들이 실행됨 */
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .box:hover{
+            width: 200px;
+            transition: 3s;
+        }
+        /* div 태그의 box 클래스에 마우스를 갖다대면 가로 길이가 200px로 늘어나는데 늘어나는 시간이 3초 걸린다는 의미 */
+
+        .boc:active{
+            width:500px;
+            background : yellowgreen;
+        }
+        
+        input{
+            width: 200px;
+            border : 1px solid gray;
+            padding : 5px 10px;
+            /* 상하좌우 여백 */
+            outline : none;
+            transition:0.6;
+        }
+
+        
+
+        input:focus{
+            border-color: red;
+            width: 300px;
+        }   
+        /* focus : 마우스로 클릭하거나 할때 변화 */
+
+    </style>
+</head>
+<body>
+
+    <a href="#">이동</a>
+    <!-- div.box : div 태그에 class가 box인것을 생성하는 명령어 -->
+    <div class="box"></div><br>
+
+    <input type="text">
+
+</body>
+</html>

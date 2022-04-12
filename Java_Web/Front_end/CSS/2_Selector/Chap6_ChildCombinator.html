@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        ul >.orange{
+            color: orange;
+        }
+
+        div > ul > li {
+            font-weight: bold;
+        }
+        /* div 안에 있는 ul의 안에도 있는 li에 대해서 굵은 글씨체로 바꿔라 */
+        div > ul > li > ol{
+            color : yellowgreen;
+        }
+        /* 1,2,3번째 글에 대해서만 색을 바꾸는 것 */
+        li>ol{
+            color : yellowgreen;
+        }
+        /* 이것도 가능  */
+        div > h1{
+            font-size: 13px;   
+        }
+        /* 메롱메롱을 나타내는 h1의 크기만 줄여줌 */
+    </style>
+    <!-- ul태그 안에 있는 것 중 class가 .orange인것들만 디자인 적용
+         ul >.orange는 ul태그 바로 밑에 있어야하고 더 안쪽에 있으면 안됨 
+         즉, >가 있으면 바로 직속에 있는 것을 뜻함. -->
+
+</head>
+<body>
+    <h1>졸리다 졸려~</h1>
+    <!-- div>ul>li*3 -->
+    <div>
+        <h1>메롱메롱</h1>
+        <ul>
+            <li>사과
+
+                <ol>
+                    <li>1번째</li>
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+            </li>
+            
+
+            <li class="orange">오렌지</li>
+
+            <li>딸기
+                <ol>
+                    <li>1번째</li>
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+</body>
+</html>
