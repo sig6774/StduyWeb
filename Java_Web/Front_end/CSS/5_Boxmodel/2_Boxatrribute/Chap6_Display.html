@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display:block;
+            width : 100px;
+            height: 100px;
+            background: red;
+        }
+        /* inline 요소인 span은 width와 height가 적용이 안됨 
+            하지만 display:block; 이렇게 지정하면 inline요소가 block요소로 변경됨*/
+        
+        a{
+            display:inline-block;
+            width:50px;
+            height: 100px;
+            background: green;
+            color: orange;
+        }
+        /* a도 inline요소이므로 block요소로 변경 
+            하지만 block요소라서 배치가 세로로 지정되어 있음 
+            가로로 지정하고 싶을때에는 inline-block을 통해 가로 지정 가능 */
+
+        .box{
+            height: 100px;
+            background: deepskyblue;
+            margin-top: 40px;
+        }
+        /* 
+        .box > input:nth-child(2){
+            display:none;
+        } */
+        /* 2번째 박스를 display에서 안보이게 만듬 */
+
+        .hide{
+            /* display: none; */
+            opacity: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <span>display 속성 공부!</span>
+
+    <a href="#">게시판</a>
+    <a href="#">방명록</a>
+    
+    <div class="box">
+        <input type="text" value = "1">
+        <input type="text" value = "2">
+        <input type="text" value = "3">
+        <input type="text" value = "4">
+        <input type="text" value = "5">
+        <input type="text" value = "6">
+    </div>
+
+    <button class="btn">클릭!</button>
+
+    <script>
+        const $box = document.querySelector(".box");
+        const $btn = document.querySelector('.btn');
+
+        $btn.onclick = () => {
+            $box.classList.toggle('hide')
+        }
+        // 사용자가 버튼을 클릭하게 된다면 hide라는 클래스를 만들어 디스플레이에서 박스영역이 사라짐
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent{
+            width : 300px;
+            height : 250px;
+            border : 4px solid black;
+            overflow: auto;
+            /* 자식태그들이 부모태그의 width와 height보다 크면 overflow를 통해서 조정가능 
+                scroll을 통해서 부모태그에서 overflow된 부분을 모두 확인 가능 
+                가장 좋은건 auto를 통해서 조건에 맞게 자동으로 조정*/
+        }
+
+        .child {
+            width: 100px;
+            height: 200px;
+            background: blue;
+            border: 4px solid orange;
+            font-size: 40px;
+        }
+        .tx1{
+            border: 1px solid #777;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- .parent>.child*2{$} -->
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+    </div>
+
+    <hr>
+    <!-- 구분선 작성 -->
+
+    <p class="tx1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut tincidunt nunc, nec luctus orci. Integer congue orci et libero accumsan fermentum vitae id arcu. Vivamus nisl dolor, pretium nec tincidunt euismod, tristique ac erat. Vivamus aliquam eros vel dui fermentum maximus. Cras libero augue, ultrices a malesuada at, convallis sit amet metus. Fusce tincidunt nunc egestas ligula luctus, at fringilla odio accumsan. Nullam vehicula turpis id efficitur sodales. Morbi et dapibus orci. Donec ut lacus id arcu bibendum finibus. Pellentesque dignissim porttitor metus, sed cursus ligula consectetur a. Duis imperdiet tincidunt leo, sed ullamcorper augue tristique sit amet. Fusce fringilla metus est, sed venenatis sem elementum eget.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur sit amet nulla volutpat commodo. Proin diam mi, rutrum at egestas ac, pretium eu purus. Duis vel nunc sed ante accumsan sagittis. Phasellus aliquet nunc et ipsum rutrum commodo. Curabitur vehicula, nibh eu rhoncus convallis, lorem dolor dapibus nulla, ac blandit ligula purus sed nibh. Cras bibendum consequat lobortis.
+    </p>
+
+</body>
+</html>

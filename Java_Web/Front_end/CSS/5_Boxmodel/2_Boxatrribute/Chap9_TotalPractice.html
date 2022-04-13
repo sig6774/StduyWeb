@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 브라우저의 default를 reset해주는것  -->
+    <!-- <style>
+        .box {
+            background: black;
+            /* line-height: 30px; */
+            height: 100px;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .menu *{
+            display: inline;
+            margin-right : 30px;
+            padding : 0 0 0 0;
+            font-size: 35px;
+            color : white;
+            border: none;
+            /* display : inline-block;
+            margin: 0 auto; */
+            text-decoration-line: none
+            /* a태그는 링크를 해주는 것이므로 밑에 줄이 생기는데 이걸 없애주는 코드 */
+        }
+        .inner {
+            margin: 100px 100px 100px 100px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    </style> -->
+
+    <!-- 강사님 코드-->
+    <style>
+        .box{
+            background: black;
+            text-align: center;
+        }
+
+        .menu li{
+            display: inline-block;
+            /* 가로로 만들기 위해서 inline처럼 만들지만 결국은 block */
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            /* height와 line-height를 같게 하면 가운데로 맞춰짐 */
+        }
+
+        .menu li a{
+            color: white;
+            font-size: 20px;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        img{
+            width: 100%;
+        }
+        /* 사진의 크기를 화면에 맞도록 조정  */
+        .inner {
+            width : 70%;
+            margin : 100px auto;
+        }
+        /* 글에 대한 레이아웃 설정 */
+
+    </style>
+</head>
+<body>
+    
+    <nav class="box">
+        <ul class="menu">
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+            <li><a href="#">메뉴 4</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <img src="./img/img1.jpg" alt="sorry~">
+        <div class="inner">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo ipsum, pellentesque id accumsan a, placerat non ante. Pellentesque vitae egestas mi, vitae tempus metus. Curabitur pharetra sem eu velit mollis imperdiet. Pellentesque at sapien at neque cursus pharetra ut ac enim. Etiam vitae massa felis. Quisque mauris mauris, elementum a vehicula id, fermentum quis lectus. Morbi neque mauris, facilisis vel justo a, aliquam iaculis risus. Duis et rutrum nibh. Sed nec semper neque, malesuada rhoncus felis. Fusce nibh diam, consequat eu risus cursus, posuere imperdiet tortor. Aenean quis neque non nunc finibus laoreet. Duis diam lectus, aliquam vitae ullamcorper eu, hendrerit vitae justo. Aliquam convallis non arcu pulvinar rutrum. Vestibulum tincidunt nec augue eu ultricies. Sed in gravida quam.
+
+Nam ipsum augue, pharetra et consequat faucibus, maximus ut mi. Pellentesque posuere velit massa, eu consequat magna condimentum fringilla. Integer libero lorem, mollis a porta eget, sollicitudin id turpis. Ut vel metus vitae dui varius porta. Donec vestibulum convallis tempor. Quisque quis ante eu mauris luctus malesuada. Vestibulum non lorem quis leo blandit porttitor sed eget lorem. Donec non pellentesque turpis. Nulla faucibus bibendum dignissim. In consectetur finibus velit et dignissim. Proin at massa ac ante vulputate luctus id sit amet ex.
+        </div>
+    </section>
+</body>
+</html>
