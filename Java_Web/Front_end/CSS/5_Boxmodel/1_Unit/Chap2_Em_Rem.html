@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html {
+            font-size:10px;
+        }
+
+         body * {
+            border:2px solid black;
+        }
+
+        .container{
+            width : 60em;
+            font-size: 20px;
+        }
+        /* 60em이 960px이므로 1em은 16px이고 em은 자기 자신의 폰트 사이즈를 따라감 */
+        /* 폰트 사이즈를 바꾸니 1em이 16px가 아니고 20px가 된 것을 확인할 수 있음 */
+
+        .parent {
+            width : 50%;
+            font-size : 2em;
+        }
+        /* parent글씨는 40px의 크기를 가짐 */
+
+        .container .parent .child {
+            width : 30%;
+            font-size : 3rem;
+        }
+        /* rem : html의 기본 pixel인 16을 지정하여 배수를 통해 폰트 크기를 조절할 수 있음 */
+        /* style에서 html의 fontsize를 바꾸면 rem의 값도 바뀜 */
+
+    </style>
+</head>
+<body>
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">child1</div>
+            
+            <div class="child">child1</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body * {
+            border:2px solid black;
+        }
+        /*  body태그안에 모든 것들에 대해 구분선을 작성
+            div는 블록 요소라서 각각 블록형태로 구분된 것을 확인 */
+
+        .container{
+            width : 1200px;
+        }
+        .parent {
+            width : 50%;
+        }
+        /*  container의 pixel 기준으로 50% 줄여주는 것(부모요소 기준) width도 %형태로 표현할 수 있음 
+            contatiner의 px 기준으로 50%인 600px */
+
+        .container .parent .child {
+            width : 30%;
+        }
+        /* container클래스 안에 parent 안에 child 모든 것 
+           child의 width의 기준은 parent기준으로 지정함으로 180px정도 됨 
+           %는 부모의 px를 기준으로 진행 */
+    </style>>
+</head>
+<body>
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">child1</div>
+            <div class="child">child1</div>
+        </div>
+    </div>
+</body>
+</html>

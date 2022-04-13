@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width : 1000px;
+            height: 300px;
+            border : 4px solid blue;
+            margin : 20px;
+        }
+        /* margin : 상하좌우 바깥 여백을 주는 기능 */
+
+        .child{
+            background: orange;
+            max-width: 400px;
+            min-height: 200px;
+        }
+        /* 최대 400px의 너비를 가질 수 있고 최소 200px의 높이를 보장 */
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>

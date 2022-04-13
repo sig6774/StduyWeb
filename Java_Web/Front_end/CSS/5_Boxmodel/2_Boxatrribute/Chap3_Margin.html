@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .outer {
+            background: blue;
+            height: 100px;
+        }
+
+        .inner{
+            width : 70%;
+            height: 100px;
+            background: darkcyan;
+            /* margin-top : 50px; */
+            /* 위의 50px정도의 여백이 생긴것을 확인 */
+
+            /* margin : 100px 200px; */
+            /* 상하에는 100px이고 좌우는 200px로 구성된 것을 확인 */
+        
+            /*
+            단축 속성 사용 시 
+            margin : 위 오른쪽 아래 왼쪽 -> 값 4개
+            margin : 위 (좌우) 아래 -> 값 3개 
+            margin : (상하) (좌우) -> 값 2개 
+            margin : (상하좌우) -> 값 1개
+            */
+
+            /* 가운데 정렬을 하고 싶을떄 */
+            margin : 0 auto;
+        }
+        /* inner는 outer의 70%를 차지하고 있다고 생각 */
+        /* margin : 위, 아래, 좌, 우에 대한 여백을 주는 기능  */
+
+        .container {
+            width: 400px;
+            height: 200px;
+            border : 4px solid blue;
+            margin-left : 200px;
+            margin-top: 100px;
+            /* 왼쪽과 위쪽 여백을 줌 */
+        }
+        
+        .container > .box1 {
+            width: 100px;
+            height: 100px;
+            border: 4px solid darkcyan;
+            /* margin-top: 20px;
+            margin-left: 50%; */
+            /* 부모의 width인 400px을 기준으로 50% */
+            margin : 0 auto;
+        }
+
+        .container > .box2{
+            width: 100px;
+            height: 100px;
+            border: 4px solid black;
+            /* margin-top: 20px; */
+            margin : 0 auto;
+        }
+
+        /* margin을 이용해 박스의 레이아웃을 조정할 수 있음 */
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+    <!-- .container>.box$*2 -->
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

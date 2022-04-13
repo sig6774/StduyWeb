@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .eco{
+            color : red;
+            font-size : 30px;
+        }
+        /* 상속 확인 
+            div의 eco클래스에 폰트에 대한 설정을 넣었는데 자식 태그들 모두 폰트 적용됨 
+           */
+
+        .eco .plant{
+            font-size : 15px;
+        }
+        /* eco클래스에 plant 클래스 모두 폰트 설정 변경 
+            자바 상속과 같이 부모의 기능을 포함하지만 자식에서는 기능을 바꿀 수 있음 */            
+    </style>
+</head>
+<body>
+    <div class="eco">
+        <div class="animal">동물</div>
+        <div class="plant">식물
+            <div>해바라기</div>
+            <div>튤립</div>
+            <div>소나무</div>
+        </div>
+    </div>
+</body>
+</html>
