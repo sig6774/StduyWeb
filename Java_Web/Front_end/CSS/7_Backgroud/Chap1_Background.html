@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 550px;
+            height: 350px;
+            border: 2px solid gray;
+
+            /* background-color: yellow;
+            background-image: url(./Images/sky.jpg); */
+            /* 만든 블록에 이미지를 넣을 수 있음 */
+            /* background-size: 200px 150px; */
+            /* 이미지를 200px 150px로 지정해서 나누어줌 */
+            /* background-size: auto;
+            background-repeat: no-repeat; */
+            /* no repeat : 반복하지말라는 뜻 */
+
+            /* background-position: 80% 70%; */
+            /* image을 기준으로 x,y를 %로 표현, image의 50% 가로로 이동 30% 세로로 이동*/
+            /* %, px, em으로 지정 가능 
+            가로축과 세로축을 한번에 지정 가능 
+            가로축만 사용하면 세로축은 가운데 정렬  */
+
+            background: yellow url(./Images/sky.jpg) no-repeat 0% 0% / auto ;
+
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    
+</body>
+</html>

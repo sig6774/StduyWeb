@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Style</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        @font-face {
+            font-family: Cookie_Black;
+            src: url(./CookieRunFont/CookieRun\ Black.ttf);
+        }
+        /* 실제 파일을 다운받아서 font를 적용
+            url에 워크스페이스에 있는 파일의 경로를 넣을수도 있고 페이지 url도 가능 */
+
+        div {
+            font-size: 50px;
+            margin-bottom: 1em;
+        }
+
+        .font1 {
+            font-family: serif;
+            /* serif : 바탕체 계열 */
+        }
+
+        .font2 {
+            font-family: sans-serif;
+            /* sans-serif : 고딕체 계열 */
+        }
+
+        .font3 {
+            font-family: monospace;
+            /* monospace : 가로폭이 동등한 글꼴 계열 */
+        }
+
+        .font4 {
+            font-family: cursive;
+            /* cursive : 필기체 계열 */
+        }
+
+        .font5 {
+            font-family: fantasy;
+            /* fantasy :  화려한 계열 */
+        }
+
+        .font6 {
+            font-family: 'Jua', sans-serif;
+            /* google font에서 link를 통해서 필기체 가져옴 */
+
+        }
+        /* google font를 통해서 font 다운로드 가능 */
+        h1{
+            /* font-family: "Cookie_Black" , cursive;
+            font-size: 50px;
+            font-style: oblique;
+            line-height: 1.4em; */
+            font: oblique 50px / 1.4em "Cookie_Black", cursive;
+            /* 순서 : font-style font-weight font-size / line-height font-face
+                단축 속성 사용시 font-size와 font-family는 필수로 지정  */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="font1">Hello World!</div>
+    <div class="font2">Hello World!</div>
+    <div class="font3">Hello World!</div>
+    <div class="font4">Hello World!</div>
+    <div class="font5">Hello World!</div>
+    <div class="font6">우리가 어떤 민족입니까! 배달의 민족!</div>
+
+    <h1>쿠키런 폰트 폰트~~~</h1>
+</body>
+</html>
