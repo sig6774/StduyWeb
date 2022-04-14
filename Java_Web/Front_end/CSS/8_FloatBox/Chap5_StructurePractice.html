@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .totalbox{
+            width : 500px;
+            height: 500px;
+            border : 2px solid gray;
+            margin : 0 auto;
+            
+        }
+
+        .box{
+            width: 20%;
+            height: 40%;
+            border: 2px solid black;
+            background: url(./Images/fish.png) no-repeat 50% 50% / auto;
+            float : left;
+
+            margin : 15px 5px 15px 5px;
+        }
+        p{
+            font-size: 15px;
+            vertical-align: bottom;
+            text-align: left;
+            margin-top: 150px;
+            font-weight: 900;
+        }
+
+        .clearfix::after{
+            content:'';
+            display: block;
+            clear : both;
+        }
+    </style>
+</head>
+<body>
+    <div class="totalbox clearfix">
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+        <div class="box"><p>모든 패딩 5px</p></div>
+</body>
+</html>

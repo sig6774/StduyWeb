@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        section{
+            width: 800px;
+            border: 3px double #ffffff;
+            height: 800px;
+            margin : 0 auto;
+        }
+        h1{
+            font-size: 42px;
+            background-color: #ccc;
+            text-align: center;
+        }
+        
+        section .intro {
+            height: 30px;
+            font-size : 18px;
+            background: #464141;
+            color: white;
+            text-align: center;
+        }
+        .gallery{
+            background-color: gray;
+            border : 5px solid wheat;
+        }
+        #tulip{
+            border: 2px solid white;
+            width: 20%;
+            height: 600px;
+            background-color: red;
+            float: left;
+            margin : 20px 20px;
+            padding : 5px;
+
+        }
+        #tulip h2{
+            background-image: url('../7_Backgroud/Images/tulip.jpg');
+            background-repeat: no-repeat;
+            background-size : 100% 50%;
+            width: 100%;
+            height: 50%;
+        }
+        #tulip p{
+            font-weight: 900;
+            font-size : 20px;
+            text-align: center;
+        }
+        #jebi{
+            border: 2px solid white;
+            width: 20%;
+            height: 600px;
+            background-color: violet;
+            float: left;
+            box-sizing: border-box;
+            margin : 20px 20px;
+            padding : 5px;
+
+        }#jebi h2{
+            background-image: url('../7_Backgroud/Images/jebi.jpg');
+            background-repeat: no-repeat;
+            background-size : 100% 50%;
+            width: 100%;
+            height: 50%;
+        }
+        #jebi p{
+            font-weight: 900;
+            font-size : 20px;
+            text-align: center;
+        }
+        
+        #hobak{
+            border: 2px solid white;
+            width: 20%;
+            height: 600px;
+            background-color: orangered;
+            float: left;
+            box-sizing: border-box;
+            margin : 20px 20px;
+            padding : 5px;
+
+        }
+        #hobak h2{
+            background-image: url('../7_Backgroud/Images/hobak.jpg');
+            background-repeat: no-repeat;
+            background-size : 100% 50%;
+            width: 100%;
+            height: 50%;
+        }
+        #hobak p{
+            font-weight: 900;
+            font-size : 20px;
+            text-align: center;
+        }
+        #sunflower{
+            border: 2px solid white;
+            width: 20%;
+            height: 600px;
+            background-color: yellow;
+            float: left;
+            box-sizing: border-box;
+            margin : 20px 10px;
+            padding : 5px;
+
+        }
+        #sunflower h2{
+            background-image: url('../7_Backgroud/Images/sunflower.jpg');
+            background-repeat: no-repeat;
+            background-size : 100% 50%;
+            width: 100%;
+            height: 50%;
+        }
+        #sunflower p{
+            font-weight: 900;
+            font-size : 20px;
+            text-align: center;
+        }
+
+        .clearfix::after{
+            content:'';
+            display: block;
+            clear : both;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h1>나의 아름다운 정원</h1>
+        <p class="intro">
+            사람들은 아마 자신에게 <span style="color:yellow">자신감을 볻돋워주는</span> 
+            표정 있는 꽃들을 선호할 것이다.
+        </p>
+
+        <!-- ul>li*4>h2+p -->
+        <ul class="gallery clearfix">
+            <li id = "tulip">
+                <h2></h2> <!-- h2에 백그라운드 속성을 사용해서 url로 각각의 꽃 이미지가 들어감 -->
+                <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다. 붉은 색이 단연 으뜸이며 한송이만 있어도 빼어나다.</p> <!-- 각 꽃의 설명이 들어감-->
+            </li>
+            <li id="jebi">
+                <h2></h2>
+                <p>드물게 푸른색을 띠고 있으며 작지만 시원해보이는 어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</p>
+            </li>
+            <li id="hobak">
+                <h2></h2>
+                <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로 매우 완숙한 이미지를 풍기는 꽃이다.</p>
+            </li>
+            <li id="sunflower">
+                <h2></h2>
+                <p>태양만 바라보는 일편 단심의 꽃으로 얼굴이 큰 편에 속하며 송이가 적어야 제격이다.</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
