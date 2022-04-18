@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background: blue;
+
+            /* transition-property: width; */
+            /* 어디를 변화시킬지 지정 */
+            /* transition-duration: 5s; */
+            /* 변화되는 시간 */
+
+            /* transition-property: background;
+            transition-duration: 700ms; */
+            /* box의 색깔이 0.7초안에 색깔이 바뀌는 것을 확인 */
+
+            transition: width 3s 1s cubic-bezier(.19,.79,.94,-0.7);
+            /* transition : 속성, 지속시간, 딜레이시간, 타이밍함수 */
+            /* 타이밍함수 : ease(처음에는 빨랐다가 이후 느려짐)
+                           ease-in(느리다가 빨라짐)
+                           ease-out(빠르다가 느리게)
+                           ease-in-out(느리게 빠르게 느리게) 
+                           linear(균일하게)
+                           cubic-bezier()함수를 통해 수동으로 설정가능*/
+
+        }
+
+        .box:hover{
+            width: 1000px;
+            background: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

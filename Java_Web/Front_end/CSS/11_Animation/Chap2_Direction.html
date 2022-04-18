@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direction</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            background: beige;
+            border-radius: 20px;
+            margin: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            color: springgreen;
+            padding-left: 20px;
+            animation: move 1s linear 0.5s infinite ;
+        }
+        @keyframes Move{
+            0%{
+                transform: translate(0,0);
+            }
+
+            25%{
+                transform: translate(200px, 0);
+            }
+
+            50%{
+                transform: translate(200px, 50px);
+            }
+
+            75%{
+                transform: translate(0, 200px);
+            }
+
+            100%{
+                transform: translate(0,0);
+            }
+            /* 시작과 끝을 동일하게 하면 자연스러운 animation 가능 */
+        }
+
+        .box:hover{
+            animation: Move 500ms infinite ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        배가 상당히 고프구만...
+    </div>
+</body>
+</html>

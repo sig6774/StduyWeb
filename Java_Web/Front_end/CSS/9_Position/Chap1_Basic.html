@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed lightgray;
+            margin: 100px 0;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background: red;
+            border: 4px dashed orange;
+
+            position:relative;
+            left : 160px;
+            bottom: 150px;
+            /* relative를 적고 위치를 지정해주면 자기 자신을 기준으로 멀어지는 것이라고 생각
+                ex) 오른쪽으로 가고 싶으면 left를 작성 위로 가고 싶으면 bottom을 지정
+                position은 기존의 있던 자리를 기준으로 어디든지 배치가 가능
+                기존에 알고 있던 문법으로 배치하기 어려울때만 사용 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

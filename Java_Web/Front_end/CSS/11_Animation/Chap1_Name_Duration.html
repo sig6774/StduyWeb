@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Name&Duration</title>
+    <style>
+
+        .box{
+            font-size: 30px;
+            width: 150px;
+            height: 300px;
+            background: beige;
+            line-height: 300px;
+            color: blue;
+        }
+
+        @keyframes 메롱 {
+            /* 내가 만든 animation을 정의 */
+            0% {
+                width: 300px;
+            }
+
+            50%{
+                width: 700px;
+            }
+
+            100%{
+                width: 500px;
+            }
+            /* 구간을 세부적으로 나눌 수 있음 */
+        }
+        /* 내가 설정한 animation을 통해서 커스텀된 효과를 줄 수 있음 */
+
+        .box:hover{
+            /* box클래스에 hover가 발생하면 animation 실행 */
+            /* animation-name: 메롱;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; */
+            /* animation의 반복을 지정 */
+
+
+            /* animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate; */
+            /* animation의 진행방향을 설정해주는것 
+                alternate : 0 -> 50 -> 100 -> 50 -> 0을 반복*/
+
+            animation: 메롱 3s ease-in-out 1s infinite alternate;
+            /* 필수사항 : name duration */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        배고프다.
+    </div>
+</body>
+</html>

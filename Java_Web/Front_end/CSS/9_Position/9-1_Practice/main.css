@@ -1,0 +1,165 @@
+
+#wrapper{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background: orange;
+    color: black;
+}
+
+header>h1{
+    font-size: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding-left: 50px;
+    line-height: 50px;
+    font-weight: 900;
+}
+header>span{
+    font-size: 30px;
+    display: block;
+    width: 1500px;
+    padding: 20px 0px 30px 200px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+.semi{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: lightgray;
+    text-align: center;
+
+}
+
+aside.left{
+    width: 22%;
+    height: 100%;
+    position: absolute;
+    /* left: 70px; */
+    top: 160px;
+}
+aside.left>p{
+    width: 100%;
+    background: darkred;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+aside.left>ul>li{
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 10px;
+}
+
+aside.left>ul>li>a{
+    color: black;
+}
+
+aside.right{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 160px;
+    right: 70px;
+}
+
+aside.right>div{
+    color: lightgray;
+    font-size: 45px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+aside.right>ul>li>a{
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+}
+
+aside.right>ul>li>span{
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+
+
+.mainsection{
+    width: 50%;
+    height: 100%;
+    background: lightgray;
+    margin: 0 auto;
+    
+}
+section>article>h2{
+    font-size: 30px;
+    width: 97%;            
+    height: 50px;
+    line-height: 50px;
+    background: navy;
+    /* margin: 10px; */
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+section>article>h2>a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+section>article>h3{
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+section>article>p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin: 10px 30px 0px 10px;
+    
+}
+
+
+footer>address{
+    width: 100%;
+    background: navy;
+    float:left;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+
+}
+
+footer>address>a{
+    color: white;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear : both;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-state</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            background: beige;
+            border-radius: 20px;
+            margin: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            color: springgreen;
+            padding-left: 20px;
+            animation: size-up 2s linear infinite alternate both;
+            text-align: center;
+        }
+        @keyframes size-up{
+            0%{
+                width: 100px;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+
+        .box::before{
+            content:'재생중';
+            font-size: 24px;
+            font-weight: bold;
+            color:royalblue;
+        }
+
+        .box:hover{
+            animation-play-state: paused;
+            /* 마우스를 가져다 대면 애니메이션 잠시 멈춤 */
+            background: yellowgreen;
+        }
+
+        .box:hover::before{
+            content: '잠시 멈춤';
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        호오~
+    </div>
+</body>
+</html>
