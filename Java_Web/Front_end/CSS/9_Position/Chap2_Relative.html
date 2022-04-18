@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            border: 4px dashed orange;
+            border-radius: 10px;
+            /* border-radius : 모서리를 깍는것 */
+            font-size: 30px;
+        }
+        .relative{
+            position: relative;
+            left: 70px;
+            top: 50px;
+        }
+        /* 왼쪽을 기준으로 70을 밀어내고 위를 기준으로 50밀어냄
+            position은 지목한 대상만 움직이고 지목한 대상은 나머지 대상에 영향을 주지 않음 */
+
+
+
+    </style>
+</head>
+<body>
+    <!-- relative : 내가 있어야할 자리에서 어디로 움직일지 생각 
+        오른쪽으로 이동하고 싶으면 왼쪽 이동하면 됨  -->
+    
+    
+    <div class="box">1</div>
+    <div class="box relative">2</div>
+    <div class="box">3</div>
+    
+    
+</body>
+</html>

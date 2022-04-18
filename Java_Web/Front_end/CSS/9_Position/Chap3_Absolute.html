@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        .grandparent{
+            width: 400px;
+            height: 300px;
+            padding: 100px;
+            border: 4px dashed gray;
+            position: relative;
+        }
+        .parent{
+            width: 300px;
+            height: 300px;
+            border: 4px dashed lightgray;
+        }
+
+        .child{
+            width: 120px;
+            height: 80px;
+            background : red;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        .absolute{
+            position: absolute;
+            right: 100px;
+            bottom: 150px;
+        }
+        /* absolute는 부모의 기준으로 움직이며 부모는 내가 원하는 부모를 기준으로 움직임
+            예시 grandparent를 기준으로 child2가 부모인 grandparent기준으로 바닥에서 150px 오른쪽에서 100px 이동 
+            즉 '부모를 기준으로 어디를 이동해라'가 absolute  */
+    </style>
+</head>
+<body>
+
+    <div class="grandparent relative">
+        
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child absolute">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+    
+</body>
+</html>
