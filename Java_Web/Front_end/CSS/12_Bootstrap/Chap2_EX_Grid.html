@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridExample</title>
+
+    <!-- 합쳐지고 최소화된 원본 부트스트랩 css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- 부가적 테마 -->
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+
+    <!-- JS 기능 사용을 위한 원본 파일 -->
+    <link rel="stylesheet" href="./js/bootstrap.js">
+    <style>
+        div[class^="col"]{
+            /* 클래스이름이 col로 시작한다면 */
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        
+        .inner{
+            border-color: blue;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        bootstrap의 grid 시스템은 
+        하나의 행에 박스를 수평으로 쉽게 배치 가능 
+        col-md-?의 총 합은 한 행당 12가 되어야 함
+
+        그리드의 class 속성
+        xs : 항상 가로로 배치 (모바일)
+        sm : 768px 이하에서는 세로로 표시 시작 (태블릿)
+        md : 992px 이하에서는 세로로 표시 시작 (노트북, 데스크탑)
+        lg : 1200px 이하에서는 세로로 표시 시작 (데스크탑)
+     -->
+
+
+     
+    <!-- 클래스 이름이 container 안에서 작성하는 것을 권장 -->
+    <div class="container">
+        <!-- 블록 요소의 한 행을 차지하게 하는 박스 영역 -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-2 col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <!-- 하나의 행에 12칸(12열)을 따로 지정하지 않아도 부트스트랩을 사용해서 나눌 수 있음 -->
+            <!-- 클래스를 여러개 지정해서 사용자가 어떤 화면에서 보더라도 그에 맞게 크기 조절 가능  -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+        <!-- row를 작성하면 줄 개행 -->
+
+        <div class="row">
+            <div class="col-md-8">col-md-8</div>
+            <!-- 12칸 중 8칸을 차지하라 -->
+            <div class="col-md-4">col-md-4</div>
+            <!-- 12칸 중 4칸을 차지하라 -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-6 inner">
+                    1-1박스
+                </div>
+                <div class="col-md-6 inner">
+                    1-2박스
+                </div>
+            </div>
+            <!-- 12칸중 8칸을 차지하고 있는 박스안에서 또다시 2개로 나눔 -->
+
+            <div class="col-md-4">
+                <div class="col-md-6 inner">
+                    1-1박스
+                </div>
+                <div class="col-md-6 inner">
+                    1-2박스
+                </div>
+            </div>
+        </div>
+            <!-- 12칸중 4칸을 차지하고 있는 박스안에서 또다시 2개로 나눔 -->
+
+        
+        <div class="row">
+            <div class="col-md-5">col-md-5</div>
+            <div class="col-md-5">col-md-5</div>
+        </div>
+        <!-- 5칸을 차지하는 박스가 2개 존재하고 오른쪽에 두칸의 공간이 남아있음 -->
+
+        <div class="row">
+            <div class="col-md-offset-1 col-md-4">col-md-4</div>
+            <div class="col-md-7">col-md-7</div>
+        </div>
+        <!-- col-md-offset-숫자 : 공백을 넣고 싶은 클래스 이름 앞에 넣어서 얼만큼 공백을 줄건지 표현가능  -->
+        <!-- d -->
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <style>
+        header {
+            height: 100px;
+            background: skyblue;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 100px;
+        }
+        ul {
+            background: #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            list-style: none;
+        }
+
+        #banner {
+            background: #ccc;
+            height: 200px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        #content{
+            border: 4px solid blue;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h2>그리드 시스템을 이용한 레이아웃</h2>
+        </header>
+
+        <div class="row">
+            <div id="menu" class="col-md-2">
+                <!-- 2칸만큼 가지는 menu 설정 -->
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+            <!-- 12칸 중 2칸 -->
+
+            <div id="content" class="col-md-8">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla condimentum
+                            augue, ut blandit arcu egestas in. Fusce id gravida sem. In eros erat, sodales at lorem eu,
+                            lacinia placerat dolor. Vestibulum fermentum lobortis mauris, et tristique lectus maximus
+                            id. Duis et magna ac erat sagittis molestie a eu diam. Fusce sed dolor id leo vestibulum
+                            ornare. Proin a purus quis sem semper blandit ut pellentesque lectus. Fusce congue ultricies
+                            lacinia.
+                        </p>
+                    </div>
+                    <div class="con-md-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla condimentum
+                            augue, ut blandit arcu egestas in. Fusce id gravida sem. In eros erat, sodales at lorem eu,
+                            lacinia placerat dolor. Vestibulum fermentum lobortis mauris, et tristique lectus maximus
+                            id. Duis et magna ac erat sagittis molestie a eu diam. Fusce sed dolor id leo vestibulum
+                            ornare. Proin a purus quis sem semper blandit ut pellentesque lectus. Fusce congue ultricies
+                            lacinia.
+                        </p>
+                    </div>
+                    <!-- 12칸중 8칸의 박스에서 6칸씩 분할 -->
+                </div>
+            </div>
+            <!-- 12칸 중 8칸 -->
+
+            <div id="banner" class="col-md-2">
+                기타 부가자리 배너
+
+            </div>
+            <!-- 12칸 중 2칸 -->
+        </div>
+
+        <hr>
+
+        <footer>
+            하단 footer section.
+        </footer>
+    </div>
+
+</body>
+
+</html>
