@@ -177,3 +177,160 @@ footer .footer-menu li a{
     color: black;
     font-size: 13px;
 }
+
+/* ================================= join =================================== */
+
+.titlebox{
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: 70px auto;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 20px;
+}
+.join-form{
+    margin: 0 auto;
+    float: none;
+    /* col에 float:left가 있기 때문에 none 적용 */
+}
+
+.join-form form {
+    border-radius: 8px;
+    padding: 15px;
+    /* 그림자 음영주기 */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    /* box-shadow : 1, 2, 3, 4, color
+        1 : 수평 방향 그림자 위치 -> 양수 : 오른쪽, 음수 : 왼쪽 
+        2 : 수직 방향 그림자 위치 -> 양수 : 박스 아래, 음수 : 박스 위 
+        3 : 그림자 선명도 -> 양수 : 그림자 끝, 음수 : X 
+        4 : 그림자 확산 거리 -> 양수 : 확대, 음수 : 축소 
+        color : 그림자 색상
+    */
+}
+.input-group-addon {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.form-control, form-group .btn { 
+    border-radius: 0;
+}
+
+.form-control:hover{
+    border-color: #555;
+}
+
+/* ============================= login ========================= */
+.loginbox{
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: 100px auto;
+    font-size: 20px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.login-form{
+    margin: 100px auto 0 ;
+    float: none;
+    /* col에 float:left가 있기 때문에 none 적용 */
+}
+
+.login-form form {
+    border-radius: 8px;
+    padding: 70px 120px;
+    /* 그림자 음영주기 */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    /* box-shadow : 1, 2, 3, 4, color
+        1 : 수평 방향 그림자 위치 -> 양수 : 오른쪽, 음수 : 왼쪽 
+        2 : 수직 방향 그림자 위치 -> 양수 : 박스 아래, 음수 : 박스 위 
+        3 : 그림자 선명도 -> 양수 : 그림자 끝, 음수 : X 
+        4 : 그림자 확산 거리 -> 양수 : 확대, 음수 : 축소 
+        color : 그림자 색상
+    */
+}
+
+.input-group1{
+    margin: 10px auto;
+}
+
+.b1{
+    background: lightseagreen;
+}
+.b2{
+    background: blue;
+}
+
+
+/* =============================== board list ============================= */
+
+.board-table{
+    margin: 0 auto;
+    float: none;
+}
+
+.search-wrap{
+    margin-bottom: 20px;
+}
+
+.search-btn, .search-input, .search-select{
+    float: right;
+}
+
+.search-input{
+    width: 200px;
+}
+
+.search-select{
+    width: 100px;
+}
+
+.table-bordered > thead > tr{
+    background: skyblue;
+    color: black;
+}
+.table-bordered > tbody > tr{
+    background: skyblue;
+    color: black;
+}
+
+.table-bordered > tbody > tr > td > a, 
+.table-bordered > tbody > tr > td > a:hover{
+    color: red;
+}
+
+.pagination{
+    margin: 0 auto;
+}
+
+.text-center .btn{
+    float: right;
+    border: 0;
+    border-radius: 0;
+    padding: 5px 10px;
+
+}
+
+/* BoardWrite */
+
+.form-control1{
+    width: 300px;
+    border: 1px solid wheat;
+    height: 40px;
+}
+
+.form-control2{
+    width: 100%;
+    border:1px solid wheat;
+    height:300px;
+}
+
+.titlefoot{
+    margin: 0 500px;
+}
