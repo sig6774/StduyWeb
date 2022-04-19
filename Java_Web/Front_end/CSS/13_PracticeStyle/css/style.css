@@ -1,0 +1,179 @@
+/*======= 웹 폰트 선언 =======*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 디자인 시작 시 기본적으로 선언하는 문법 */
+* {
+    /* 기본 선언: 마진, 패딩 0, 요소 크기를 border를 기준으로.*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+/* 모든 요소에 대해서 공통적으로 적용하는 style 작성 */
+
+body, html {
+    width: 100%;
+    min-width: 320px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+    max-width: 100%; /*사이즈가 변해도 넓이를 유지*/
+    height: auto; /* 사이즈가 변해도 비율을 유지 */
+}
+
+input, textarea, button, select {
+    /* 고유하게 적용되어있는 form 관련 요소들을 제거해서
+     여러 브라우저에서 동일한 디자인을 얻게 함.*/
+    -webkit-appearance: none; /*크롬, 사파리*/
+    -moz-appearance: none; /*파이어폭스*/
+    appearance: none; /*ie, edge*/
+    border: none;
+}
+
+ul, ol, dl, li {
+    /*리스트 스타일은 사용할 일이 많지 않음*/
+    list-style: none; 
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.clearfix::after {
+    content: '';
+
+    display: block;
+    clear: both;
+}
+
+/* ================================= header ================================= */
+header{
+    position: fixed;
+    /* 스크롤이 생겨도 화면에 헤더를 고정 */
+    padding: 0 15px;
+    left: 0;
+    top: 0;
+    /* 항상 위에 고정될 수 있도록 위치 지정 */
+    z-index: 50;
+    background: lightskyblue;
+    width: 100%;
+}
+
+header .container {
+    padding: 0;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 10px 15px;
+}
+
+.nav > li > a{
+    font-size: 15px;
+    color: black;
+}
+
+.nav > li > a:hover{
+    background: #304048;
+}
+/* 메뉴에 호버가 발생했을때 색상 변경 */
+
+/* 토클메뉴
+    화면이 작아졌을때 생기는 메뉴바이며 배경과 윤곽선의 색을 변경 */
+.navbar-toggle{
+    border-color: wheat;
+}
+
+.navbar-toggle > .icon-bar{
+    background-color: wheat;
+}
+
+/* 로그인 메뉴 드롭다운 열릴 시 배경색 변경 */
+
+.nav .open a:focus{
+    background: #304048;
+}
+
+/* ===================================본문=================================== */
+
+section {
+    margin-top: 75px;
+}
+
+/* 섹션 전체 영역 디자인 지정 */
+.prod-list, .prod-link{
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+}
+
+.prod-list, .prod-list > li[class^="col"]{
+    padding: 5px;
+}
+
+.prod-link:hover{
+    border-color: #4285f4;
+}
+/* 상품 hover시 테두리 표시나게 */
+
+.prod-link > .arrow{
+    /* span태그는 inline요소이므로 block요소로 변경 */
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ccc;
+    color: #fff;
+    opacity: 1;
+
+    left: 15px;
+    bottom: 36px;
+    /* col이 메겨진 것들은 relative가 있으므로 부모 기준으로 position 이동 */
+    /* left와 bottom을 박스 기준으로 이동 */
+}
+
+.prod-link .hover{
+    /* prod-link 클래스 안에 있는 모든 hover */
+    width: 100px;
+    background: #4285f4;
+    opacity: 0;
+}
+
+.prod-link:hover .arrow{
+    /* prod-link에 hover가 발생했을때의 모든 arrow는  */
+    opacity: 0;
+}
+
+.prod-link:hover .hover{
+    opacity: 1;
+}
+/* hover가 발생했을때에는 보여지고 발생하지 않으면 보여지지 X */
+
+/* =============================== footer ============================ */
+footer{
+    margin-top: 70px;
+    background: lightskyblue;
+    padding: 30px 0 15px;
+    /* 상 좌우 하 */
+}
+
+footer .copyright{
+    font-size: 13px;
+    color: black;
+    line-height: 20px;
+}
+
+footer .footer-menu li {
+    display: inline;
+    /* 가로배치하기 위해서  */
+    padding: 0 10px;
+}
+
+footer .footer-menu li a{
+    color: black;
+    font-size: 13px;
+}
