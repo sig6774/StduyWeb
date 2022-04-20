@@ -317,20 +317,215 @@ footer .footer-menu li a{
 
 }
 
-/* BoardWrite */
+/* ================================== BoardWrite =========================*/
 
-.form-control1{
-    width: 300px;
-    border: 1px solid wheat;
-    height: 40px;
+.write-wrap{
+    width: 70%;
+    float: none;
+    /* 클래스 이름이 col로 시작하는 것은 자동으로 float이 입력되어 있으므로 제거 */
+    margin: 0 auto;
 }
 
-.form-control2{
-    width: 100%;
-    border:1px solid wheat;
-    height:300px;
+.t-control .t-title{
+    width: 100px;
+}
+
+.t-control input{
+    /* 입력창의 길이 조정 */
+    width: 200px;
+
+}
+
+.t-control textarea{
+    resize: none;
 }
 
 .titlefoot{
-    margin: 0 500px;
+    text-align: center;
+    /* margin-top: 0px auto; */
 }
+
+
+/* ============================ BoardContent ========================= */
+
+.content-wrap{
+    float: none;
+    margin: 0 auto;
+}
+
+.content-wrap #content{
+    resize: none;
+    /* Box의 사이즈를 변경하지 못하도록 하는 명령어 */
+}
+
+.btn-kr{
+    background: blue;
+    color: wheat;
+    float: right;
+}
+
+.btn-kr1{
+    background: red;
+    color: wheat;
+    float: right;
+}
+
+/* ===================== BoardContent =============================== */
+
+.reply-wrap{
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.reply-wrap .reply-image{
+    /* reply-wrap안에 있는 replay-image */
+    position: absolute;
+    /* relative라는 속성을 가진 부모를 기준 */
+    left: 15px;
+    top: 15px;
+    /* 부모인 reply-wrap을 기준으로 위, 좌 15px이동 */
+}   
+
+.reply-wrap .reply-content {
+    padding-left: 60px;
+}
+
+.reply-content textarea{
+    resize: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.reply-input > .form-control{
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.reply-input {
+    float: left;
+}
+
+.reply-group > button{
+    float: right;
+}
+
+.reply-group small {
+    margin-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.reply-group .right {
+    text-decoration: none;
+    color: #4285f4;
+    float: right;
+}
+
+
+/* ====================== Board2(이미지 게시판) ====================== */
+.prod-list-inner img{
+    width: 100%;
+    /* image는 하나의 box의 100% */
+}
+
+.prod-content {
+    padding: 15px 0;
+}
+
+.prod-content .info > span{
+    display: block;
+    /* 가로로 배치되어 있는 것을 세로로 배치하기 위해 사용 */
+}
+
+.prod-content .info {
+    float: left;
+
+}
+
+.prod-content .price{
+    float: right;
+}
+
+.prod-color {
+    margin-top: -40px;
+    float: left;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.prod-color li {
+    width: 50px;
+    float: left;
+    /* 이미지 가로배치 */
+}
+.prod-list-inner:hover .prod-color{
+    /* prod-list-inner에 hover가 되면 prod-color의 상품 표시 */
+    opacity: 1;
+}
+
+
+/* ============================== detail =========================== */
+
+.detail-info .title{
+    font-size: 25px;
+}
+
+.detail-info .price{
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.detail-control{
+    padding-top: 100px;
+    float:none;
+}
+
+.detail-control .price .left{
+    float: left;
+    font-size: 30px;
+}
+
+.detail-control .price .right{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.order{
+    padding-top: 50px;
+    /* float: none; */
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.order .b1 {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    /* float: left; */
+    position: absolute;
+    bottom: 100px;
+    right: 275px;
+    background: white;
+    font-size: 30px;
+    font-weight: 300;
+    border: 1px wheat solid;
+}
+
+.order .b2{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    bottom: 100px;
+    left: 275px;
+    background: skyblue;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
