@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index01</title>
+    <style>
+        * {
+            background: skyblue;
+        }
+
+        /* 768px 이상 사이즈에서 해당 css가 동작한다는 뜻 */
+        @media (min-width:768px) {
+            .box1 {
+                border: 10px solid pink;
+                color: yellowgreen;
+                font-size: 30px;
+            }
+        }
+
+        /* width가 768미만이면 경계선이 사라짐  */
+
+        @media (max-width:767px) {
+            .box1 {
+                display: none;
+            }
+        }
+
+        /* width가 767이상이면 내용 사라짐 */
+
+        /* @media는 미디어 쿼리이며 해당  */
+        .box2 {
+            width: 100%;
+            margin: 0 auto;
+            color: pink;
+            font-weight: 900;
+        }
+
+        @media (min-width:1300px) {
+            /* 1300px이상에서 동작 */
+            .box2 .inner {
+
+                width: 16.6666%;
+                float: left;
+                /* 하나의 화면에 6개씩 배치 */
+            }
+        }
+
+        @media (max-width:1299px) {
+
+            /* 768 ~ 1299px까지 동작 */
+            .box2 .inner {
+                width: 25%;
+                float: left;
+                /* 하나의 화면에 4개씩 배치 */
+            }
+        }
+
+        @media (max-width:767px) {
+
+            /* 768 미만에서는 이렇게 동작 */
+            .box2 .inner {
+                width: 50%;
+                float: left;
+                /* 하나의 화면에 2개씩 배치 */
+            }
+
+            .box2 .inner img {
+                box-sizing: border-box;
+            }
+        }
+
+        .clearfix::after {
+            content: '';
+
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        쭈욱 ~ 쭈욱 ~ 쭈욱 ~
+    </div>
+
+    <div class="box2">
+        <div class="inner clearfix">아기 상어 뚜루루뚜루<img src="./캡처.PNG" alt=""></div>
+        <div class="inner clearfix">아기 상어 뚜루루뚜루<img src="./캡처.PNG" alt=""></div>
+        <div class="inner clearfix">아기 상어 뚜루루뚜루<img src="./캡처.PNG" alt=""></div>
+        <div class="inner clearfix">아기 상어 뚜루루뚜루<img src="./캡처.PNG" alt=""></div>
+        <div class="inner clearfix">아기 상어 뚜루루뚜루<img src="./캡처.PNG" alt=""></div>
+        <div class="inner clearfix">아기 상어 뚜루루뚜루<img src="./캡처.PNG" alt=""></div>
+    </div>
+</body>
+
+</html>
