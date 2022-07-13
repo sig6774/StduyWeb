@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Search01 {
+public class Search02 {
 	
 	public static int binarySearch(int[] arr, int target) {
 		int left = 0;
